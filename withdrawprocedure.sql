@@ -21,7 +21,10 @@ dbms_output.put_line('Remaining Balance : ' || (v_balance - p_amount));
 
   exception
     WHEN no_data_found THEN
+
       dbms_output.put_line('Invalid accno' || p_accno);
+
+      
    
 end;
 /
